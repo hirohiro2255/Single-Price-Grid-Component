@@ -163,3 +163,43 @@ body {
     margin-top: 18px;
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "main main"
+      "signup about";
+    width: 44%;
+    max-width: 635px;
+    min-width: 500px;
+    height: 475px;
+  }
+  .w-container {
+    margin: 6.2%;
+  }
+  .main-card-container {
+    grid-area: main;
+    width: 100%;
+  }
+  .main-card-paragraph2 {
+    margin-top: 11px;
+  }
+  .payment-container {
+    grid-area: signup;
+    height: 260px;
+    .signup-button {
+      padding-left: 89px;
+      padding-right: 89px;
+    }
+  }
+  .about-container {
+    grid-area: about;
+    height: 260px;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
