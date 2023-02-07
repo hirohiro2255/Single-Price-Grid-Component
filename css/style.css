@@ -5,38 +5,156 @@
   --neutral-grayish-blue: hsl(218, 22%, 67%);
 }
 
+* {
+  font-family: "Karla", sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
 body {
+  background-color: #f2f2f2;
+  display: grid;
+  place-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #f2f2f2;
+}
+
+.container {
+  width: 83%;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 15px 30px 0px hsla(212deg, 100%, 33%, 0.15);
+}
+
+.w-container {
+  margin: 7.7%;
+}
+
+.main-card-title {
+  color: var(--primary-cyan);
+  color: hsl(179deg, 62%, 43%);
+  font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+  min-height: 0vw;
+  font-weight: 700;
+  line-height: 23.38px;
+  letter-spacing: -0.25px;
+  margin-top: 28px;
+}
+
+.main-card-paragraph {
+  font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
+  min-height: 0vw;
+  font-weight: 700;
+  color: var(--primary-bright-yellow);
+  line-height: 20px;
+  letter-spacing: -0.19px;
+  margin-top: 24px;
+}
+
+.main-card-paragraph2 {
+  font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+  min-height: 0vw;
+  color: var(--neutral-grayish-blue);
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.17px;
+  margin-top: 16px;
+}
+
+.payment-container {
+  background-color: var(--primary-cyan);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 228px;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 37% 32% 31%;
-  width: 82.9%;
-  height: 84.3%;
-  max-width: 311px;
-  min-width: 211px;
-  max-height: 722px;
-  min-height: 622px;
+.payment-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.04px;
+  letter-spacing: -0.22px;
+  color: #fff;
 }
 
-.card-title {
-  background-color: #fff;
+.payment-price-detail {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.payment-price-detail .price {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.41px;
+  letter-spacing: -0.4px;
+  color: #fff;
+  opacity: 1;
+}
+.payment-price-detail span {
+  margin-left: 11px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+  color: #fff;
 }
 
-.card-register {
+.description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  margin-top: 4px;
+}
+
+.signup-button {
+  padding-left: clamp(6.375rem, 6.6611rem - 1.2207vw, 5.5625rem);
+  padding-right: clamp(6.375rem, 6.6611rem - 1.2207vw, 5.5625rem);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 26px;
+  border-radius: 5px;
+  background-color: var(--primary-bright-yellow);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.7px;
+  letter-spacing: -0.2px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border: 1px solid var(--primary-bright-yellow);
+}
+
+.about-container {
   background-color: var(--primary-cyan);
-}
-
-.card-detail {
-  background-color: var(--primary-cyan);
+  height: 228px;
   opacity: 0.85;
+  padding-top: 7.7%;
+}
+.about-container div {
+  margin-left: 7.7%;
+  margin-right: 7.7%;
+}
+.about-container h2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 21.04px;
+  letter-spacing: -0.22px;
+}
+.about-container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.17px;
+  color: #fff;
+  opacity: 0.75;
+  margin-top: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
