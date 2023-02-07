@@ -192,6 +192,9 @@ body {
     .signup-button {
       padding-left: 89px;
       padding-right: 89px;
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
   .about-container {

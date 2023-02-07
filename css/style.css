@@ -186,6 +186,9 @@ body {
     padding-left: 89px;
     padding-right: 89px;
   }
+  .payment-container .signup-button:hover {
+    opacity: 0.9;
+  }
   .about-container {
     grid-area: about;
     height: 260px;
